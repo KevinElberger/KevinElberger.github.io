@@ -5,8 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kevin Elberger</title>
+        <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <!-- Font Awesome Icons -->
+        <script src="https://use.fontawesome.com/105af44212.js"></script>
+        <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     </head>
@@ -17,9 +21,20 @@
             <h1 class="main-title">Hi, I'm Kevin Elberger, an aspiring web developer.</h1>
             <a class="arrow bounce jumper" href="#here"></a>
         </div>
+        <nav>
+            <a href="" class="logo-box">
+                <figure class="logo"><div></div></figure>
+                <div class="logo-title"></div>
+            </a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <div id="here" class="about">
-                <h2>A Little About Me</h2>
+            <section id="about">
+                <h2 id="here">A Little About Me</h2>
                 <p>
                     I've been passionately developing web applications for over a year. I aim to create well-designed, responsive
                     websites in an efficient and effective manner. I'm always eager to learn and use new technologies for web
@@ -27,21 +42,38 @@
                 <br/><br/>
                     Outside of developing, I enjoy weight lifting, reading, and playing video games.
                 </p>
-            </div>
-            <div class="projects">
+            </section>
+
+            <section id="projects">
                 <h2>Projects I've Done</h2>
-                <section id="card-constructor">
-                    <h4 class="text-center"><strong>Card Constructor</strong></h4>
-                    <p>
-                        A web application that allows users to create decks of playing cards, look-up pricing information about cards,
-                        and view statistics about the decks they create.
-                    </p>
-                    <p class="text-center"><strong>Technologies Used</strong></p>
-                </section>
-            </div>
-            <div class="contact">
+                    <article id="card-constructor">
+                        <h4 class="text-center">Card Constructor</h4>
+                        <p>
+                            A web application that allows users to create decks of playing cards, look-up pricing information about cards,
+                            and view statistics about the decks they create.
+                        </p>
+                        <p class="text-center">Technologies Used</p>
+
+                    </article>
+                <hr/>
+                    <article id="fitness-app">
+                        <h4 class="text-center">Fitness App</h4>
+                        <p>
+                            This web application enables users to monitor & track their weightlifting and weight progress, encouraging a healthy lifestyle.
+                        </p>
+                        <p class="text-center">Technologies Used</p>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    </article>
+            </section><!-- /projects -->
+
+            <section id="contact">
                 <h2>Contact Me Here</h2>
-            </div>
+                <div class="text-center">
+                    <a href="mailto:kevelberger@gmail.com?Subject=Hello" class="social-icon envelope"><span class="fa fa-envelope"></span></a>
+                    <a href="https://github.com/KevinElberger" class="social-icon github"><span class="fa fa-github-alt"></span></a>
+                    <a href="https://www.facebook.com/kevin.elberger" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a>
+                </div>
+            </section><!-- /contact-->
         </div> <!-- /container -->
     <footer></footer>
     </div> <!-- /content -->
