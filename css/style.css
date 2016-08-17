@@ -19,7 +19,7 @@ h1, strong {
     position: relative;
     background-size: cover;
     background-position: center center;
-    background-image: url('../img/demo-2-bg.jpg');
+    background-image: url('../img/bg.jpg');
 }
 
 .main-title {
