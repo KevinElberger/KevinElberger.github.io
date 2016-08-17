@@ -1,7 +1,12 @@
 body {
     color: #555;
-    margin: 0;
+    margin: 0 auto;
     line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+canvas {
+    display: inline-block;
 }
 
 h1, strong {
@@ -9,8 +14,17 @@ h1, strong {
     font-family: 'Oswald', sans-serif;
 }
 
-canvas {
-    display: inline-block;
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+p {
+    padding: 3em 1em;
+}
+
+section p {
+    padding: 1em 1em;
 }
 
 .about {
@@ -47,12 +61,32 @@ canvas {
     }
 }
 
+#card-constructor {
+    padding-top: 1em;
+}
+
+.container {
+    max-width: 50em;
+    background: #FFF;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.container a {
+    color: #131224;
+}
+
+.content {
+    background: #D8DCCB;
+}
+
 .large-header {
     width: 100%;
     background: #333;
     position: relative;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     background-image: url('../img/bg.jpg');
 }
 
@@ -71,6 +105,6 @@ canvas {
 
 @media only screen and (max-width : 768px) {
     .main-title {
-        font-size: 4em;
+        font-size: 3em;
     }
 }
