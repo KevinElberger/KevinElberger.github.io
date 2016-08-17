@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.main-title').fadeIn("slow");
+    $('.main-title').delay(1000).animate({"opacity": "1"}, 700);
     $(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
