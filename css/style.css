@@ -13,7 +13,11 @@ canvas {
     display: inline-block;
 }
 
-h1, strong {
+footer {
+    padding-top: 0.5em;
+}
+
+h1 {
     color: #333;
     font-family: 'Oswald', sans-serif;
 }
@@ -70,11 +74,17 @@ nav ul {
 .fixed-links {
     margin-right: 30%;
 }
+
 nav ul li a {
     color: white;
     font-weight: bold;
     font-size: 15px;
     padding: 1.5em;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #D8DCCB;
 }
 
 /* End navigation menu css */
@@ -107,6 +117,17 @@ nav ul li a {
     60% {
         transform: translateY(-15px);
     }
+}
+
+.btn-alt {
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 0;
+    box-shadow: 0 0 1px rgba(51, 51, 51, 0.7);
+}
+
+.btn-alt:hover {
+    background: #131224;
 }
 
 #card-constructor {
@@ -168,6 +189,10 @@ a.facebook:hover {
     padding-top: 3em;
 }
 
+.hideme {
+    opacity: 0;
+}
+
 .large-header {
     width: 100%;
     background: #333;
@@ -195,4 +220,15 @@ a.facebook:hover {
     .main-title {
         font-size: 3em;
     }
+}
+
+.technologies p {
+    display: inline;
+    font-weight: 200;
+    text-align: center;
+    box-shadow: 0 0 1px rgba(51, 51, 51, 0.7);
+}
+
+.visible {
+    opacity: 1;
 }

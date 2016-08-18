@@ -13,6 +13,12 @@ $(document).ready(function() {
         }
     });
 
+    // Load items if located in viewport
+    $('.post').addClass('hideme').viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
+    });
+
     // On arrow click, scroll down
     $('.main-title').delay(1000).animate({"opacity": "1"}, 700);
     $(function() {

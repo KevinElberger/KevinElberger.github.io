@@ -8,6 +8,7 @@
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
         <!-- Font Awesome Icons -->
         <script src="https://use.fontawesome.com/105af44212.js"></script>
         <!-- Google Fonts -->
@@ -33,7 +34,7 @@
             </ul>
         </nav>
         <div class="container">
-            <section id="about">
+            <section id="about" class="post">
                 <h2 id="here">A Little About Me</h2>
                 <p>
                     I've been passionately developing web applications for over a year. I aim to create well-designed, responsive
@@ -44,30 +45,45 @@
                 </p>
             </section>
 
-            <section id="projects">
+            <section id="projects" class="post">
                 <h2>Projects I've Done</h2>
-                    <article id="card-constructor">
+                    <article id="card-constructor" class="post">
                         <h4 class="text-center">Card Constructor</h4>
                         <p>
                             A web application that allows users to create decks of playing cards, look-up pricing information about cards,
                             and view statistics about the decks they create.
                         </p>
                         <p class="text-center">Technologies Used</p>
-
+                        <div class="technologies text-center">
+                            <p>AngularJS</p>
+                            <p>Bootstrap</p>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>APIs</p>
+                        </div>
                     </article>
                 <hr/>
-                    <article id="fitness-app">
+                    <article id="fitness-app" class="post">
                         <h4 class="text-center">Fitness App</h4>
                         <p>
                             This web application enables users to monitor & track their weightlifting and weight progress, encouraging a healthy lifestyle.
                         </p>
+                        <p class="text-center"><a href="http://cardconstructor.herokuapp.com" class="btn-alt">View Site</a></p>
                         <p class="text-center">Technologies Used</p>
-                        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                        <div class="technologies text-center">
+                            <p>Laravel</p>
+                            <p>Bootstrap</p>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>D3js</p>
+                        </div>
                     </article>
+                <hr/>
             </section><!-- /projects -->
 
-            <section id="contact">
-                <h2>Contact Me Here</h2>
+            <section id="contact" class="post">
+                <h2>Contact</h2>
+                <p>The quickest way to reach me is through email.</p>
                 <div class="text-center">
                     <a href="mailto:kevelberger@gmail.com?Subject=Hello" class="social-icon envelope"><span class="fa fa-envelope"></span></a>
                     <a href="https://github.com/KevinElberger" class="social-icon github"><span class="fa fa-github-alt"></span></a>
@@ -75,9 +91,12 @@
                 </div>
             </section><!-- /contact-->
         </div> <!-- /container -->
-    <footer></footer>
+    <footer>
+        <div class="text-center small"><p>Copyright &copy; 2016 Kevin Elberger All Rights Reserved</p></div>
+    </footer>
     </div> <!-- /content -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/viewportchecker.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/main.js"></script>
     </body>
