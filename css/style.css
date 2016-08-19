@@ -243,7 +243,23 @@ a.github:hover {
     padding-bottom: 0;
 }
 
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
 .technologies p {
+    padding: 0.5em;
     font-weight: 200;
     text-align: center;
     display: inline-block;
