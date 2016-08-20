@@ -156,6 +156,10 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+.btn-alt:focus {
+    text-decoration: none;
+}
+
 #card-constructor {
     padding-top: 1em;
 }
@@ -247,6 +251,11 @@ a.github:hover {
 #donut {
     text-align: center;
     margin: 0 auto;
+}
+
+.page-scroll:visited, .page-scroll:active {
+    text-decoration: none;
+    color: #fff;
 }
 
 .portrait {
