@@ -1,107 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Kevin Elberger</title>
-        <!-- Font Awesome Icons -->
-        <script async src="https://use.fontawesome.com/105af44212.js"></script>
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700 | Open+Sans" rel="stylesheet">
-        <!-- Bootstrap CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-    </head>
-    <body>
-    <div class="content">
-        <div id="large-header" class="large-header">
-            <canvas id="demo-canvas"></canvas>
-            <h1 class="main-title">Hi, I'm Kevin Elberger, an aspiring web developer.</h1>
-            <a class="arrow bounce jumper" href="#here"></a>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My portfolio website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Kevin Elberger</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">Kevin Elberger</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
+                    <a class="mdl-navigation__link" href="blog.html">Blog</a>
+                    <a class="mdl-navigation__link" href="about.html">About</a>
+                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
+                <a class="mdl-navigation__link" href="blog.html">Blog</a>
+                <a class="mdl-navigation__link" href="about.html">About</a>
+                <a class="mdl-navigation__link" href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav>
-            <a href="" class="logo-box">
-                <figure class="logo"><div></div></figure>
-                <div class="logo-title"></div>
-            </a>
-            <ul>
-                <li><a class="page-scroll" href="#here">About</a></li>
-                <li><a class="page-scroll" href="#projects">Projects</a></li>
-                <li><a class="page-scroll" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="container" id="here">
-            <section id="about" class="post">
-                <img class="portrait post" src="img/me.png" />
-                <h2>A Little About Me</h2>
-                <p>
-                    I've been passionately developing web applications for over a year, always aiming to create well-designed, responsive
-                    websites in an efficient and effective manner. I'm always eager to learn and use new technologies for web
-                    development. I also love graphs & animations.
-                <br/><br/>
-                    Outside of developing, I enjoy weight lifting, reading, and playing video games!
-                </p>
-            </section><!-- /about -->
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/example-work1.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Card Constructor</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        A web application made with AngularJS that allows users to create custom-built decks for Magic The Gathering.
 
-            <section id="projects" class="post">
-                <h2>Projects I've Done</h2>
-                    <article id="card-constructor" class="post">
-                        <h3 class="text-center">Card Constructor</h3>
-                        <p>
-                            I created a  web application that allows users to create decks of playing cards, look-up pricing information about cards,
-                            and view statistics about the decks they create.
-                        </p>
-                        <p class="text-center"><a href="http://card-constructor.herokuapp.com" class="btn-alt" target="_blank">View Site</a></p>
-                        <p class="text-center">Technologies Used</p>
-                        <div class="technologies text-center">
-                            <p>AngularJS</p>
-                            <p>JavaScript</p>
-                            <p>Bootstrap</p>
-                            <p>HTML5</p>
-                            <p>CSS3</p>
-                            <p>APIs</p>
-                        </div>
-                    </article><!-- /card-constructor -->
-                <hr/>
-                    <article id="fitness-app" class="post">
-                        <div id="svg-wrapper"></div>
-                        <h3 class="text-center">Fitness App</h3>
-                        <p>
-                            I worked on a web application that enables users to monitor & track their weightlifting and weight progress, encouraging a healthy lifestyle.
-                        </p>
-                        <p class="text-center"><a href="http://immense-earth-87309.herokuapp.com/" class="btn-alt" target="_blank">View Site</a></p>
-                        <p class="text-center">Technologies Used</p>
-                        <div class="technologies text-center">
-                            <p>Laravel</p>
-                            <p>JavaScript</p>
-                            <p>Bootstrap</p>
-                            <p>HTML5</p>
-                            <p>CSS3</p>
-                            <p>D3.js</p>
-                        </div>
-                    </article><!-- /fitness-app -->
-                <hr/>
-            </section><!-- /projects -->
-
-            <section id="contact" class="post">
-                <h2>Contact</h2>
-                <p>The quickest way to reach me is through email @ <strong>kevelberger@gmail.com</strong>.</p>
-                <div class="text-center">
-                    <a href="mailto:kevelberger@gmail.com?Subject=Hello" class="social-icon envelope"><span class="fa fa-envelope"></span></a>
-                    <a href="https://github.com/KevinElberger" class="social-icon github" target="_blank"><span class="fa fa-github-alt"></span></a>
+                        Graphs are generated based on deck statistics, as well as for individual cards, such as card price data.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio/card-constructor.html">Read more</a>
+                    </div>
                 </div>
-            </section><!-- /contact-->
-        </div> <!-- /container -->
-    <footer>
-        <div class="text-center small"><p>Copyright &copy; 2016 Kevin Elberger All Rights Reserved</p></div>
-    </footer>
-    </div> <!-- /content -->
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/animate.min.js"></script>
-    <script src="js/main.min.js"></script>
-    </body>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/example-work2.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Fitness App</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        A user-based web application that allows users to monitor and track their weight and weightlifting progress. Utilizes user data to create charts using the D3.js graphing library.
+                        Developed using the Laravel framework.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio/fit-app.html">Read more</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" images/example-work3.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Middle Earth</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        A web application created for my senior design class. It is an article website where users can create and read articles from other users.
+                        Has an API that is used by a standalone Java GUI application that I developed.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio/middle-earth.html">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Kevin Elberger</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Kevin Elberger</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+        <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">Kevin Elberger</span>
+                </span>
+        </div>
+        <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="../index.html">Portfolio</a>
+                <a class="mdl-navigation__link" href="../blog.html">Blog</a>
+                <a class="mdl-navigation__link" href="../about.html">About</a>
+                <a class="mdl-navigation__link" href="../contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link is-active" href="../index.html">Portfolio</a>
+            <a class="mdl-navigation__link" href="../blog.html">Blog</a>
+            <a class="mdl-navigation__link" href="../about.html">About</a>
+            <a class="mdl-navigation__link" href="../contact.html">Contact</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid portfolio-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media">
+                    <img class="article-image" src="../images/portfolio-cover1.jpg" border="0" alt="">
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <strong>Includes</strong>
+                    <span>Design and Frontend Development</span>
+                </div>
+                <div class="mdl-grid portfolio-copy">
+                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>
+                    <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
+                        <p>
+                            Card Constructor allows users to create decks of Magic: The Gathering cards and lets users
+                            look up card-specific information, such as prices of cards, all the different sets of each
+                            card, and so on.
+                        </p>
+                        <p>
+                            The main functionality revolves around deck creation, where users can select the cards they
+                            want to create a Magic: The Gathering deck. Charts are created from the information gathered
+                            by the cards that are chosen.
+                            The charts are generated via the Angular Chart plugin for AngularJS. Pie charts, donut charts,
+                            bar charts, and line charts are used in this application.
+                        </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <img class="article-image" src="../images/card-constructor-example1.jpg" border="0" alt="">
+                    </div>
+                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Initial Ideas</h3>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <img class="article-image" src="../images/card-constructor-example2.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                        <p>
+                            I wanted to get some experience using AngularJS, so I thought that a deck creation website
+                            would give me enough flexibility to experiment with Angular and it would give me insight into
+                            how to tie Angular together with the backend, mainly MongoDB and Express.
+                        </p>
+                        <p>
+                            The EchoMTG and MagicTheGathering.io APIs were used to gather pricing data and card-specific
+                            data. The User and Deck models were used so that users could save their decks to their profile
+                            as well.
+                        </p>
+                    </div>
+                    <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Final Concept</h3>
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <img class="article-image" src="../images/card-constructor-example3.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+                        <p>
+                            There is still work to be done, mainly re-factoring code and developing more tests to ensure
+                            things are working properly. The website still needs to be better-suited for mobile devices,
+                            since it was largely designed with desktop-usage in mind at first.
+                            Still, users can register, log in, create decks or look up information about specific cards,
+                            and load their saved decks and edit them if they choose to do so. My favorite part was creating
+                            all the different charts!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Kevin Elberger</div>
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</div>
+<script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+</body>
+
+</html>
