@@ -171,3 +171,23 @@ footer {
 .center {
   text-align: center;
 }
+
+.social-btn {
+}
+
+.github {
+  background-position: center;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  cursor: pointer;
+  border: hidden;
+  border-radius: 32px;
+  background: url('../images/github.png') no-repeat;
+}
+
+.blog-img {
+  height: 80%;
+  width: 100%;
+}
