@@ -191,3 +191,16 @@ footer {
   height: 80%;
   width: 100%;
 }
+
+#chartDiv {
+  width: 100%;
+}
+
+#zing-header-image {
+  height: 30% !important;
+}
+
+img.zingchart-header-image {
+  position: relative;
+  left: 5%;
+}
