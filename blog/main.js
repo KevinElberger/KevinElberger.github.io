@@ -40,6 +40,12 @@ var chartData = {
             "plotarea": {
                 "margin": "20% 0% 0% 0%"
             },
+            "refresh": {
+                "type": "feed",
+                "transport": "js",
+                "url": "calories()",
+                "interval": 1000
+            },
             "plot": {
                 "slice": 50,
                 "ref-angle": 270,
@@ -125,6 +131,12 @@ var chartData = {
             "plotarea": {
                 "margin": "20% 0% 0% 0%"
             },
+            "refresh": {
+                "type": "feed",
+                "transport": "js",
+                "url": "distance()",
+                "interval": 1000
+            },
             "plot": {
                 "slice": 50,
                 "ref-angle": 270,
@@ -151,13 +163,13 @@ var chartData = {
                     "rules": [
                         {
                             "rule": "%v == 4.8",
-                            "text": "%v Miles Completed",
+                            "text": "%v Miles Remaining",
                             "shadow": false,
                             "border-radius": 4
                         },
                         {
                             "rule": "%v == 6.1",
-                            "text": "%v Miles Remaining",
+                            "text": "%v Miles Completed",
                             "shadow": false,
                             "border-radius": 4
                         }
@@ -173,14 +185,14 @@ var chartData = {
             },
             "series": [
                 {
-                    "values": [4.8],
+                    "values": [6.1],
                     "text": "Miles",
                     "background-color": "#baf000",
                     "border-width": "0px",
                     "shadow": 0
                 },
                 {
-                    "values": [6.1],
+                    "values": [4.8],
                     "background-color": "#dadada",
                     "alpha": "0.5",
                     "border-color": "#dadada",
@@ -278,6 +290,12 @@ var chartData = {
                 "font-color": "#333",
                 "font-size": "16px"
             },
+            "refresh": {
+                "type": "feed",
+                "transport": "js",
+                "url": "update()",
+                "interval": 1000
+            },
             "plot": {
                 "aperture": 180,
                 "csize": 4,
@@ -348,5 +366,25 @@ zingchart.render({
 window.feed = function(callback) {
     var tick = {};
     tick.plot0 = parseInt(Math.random() * (85 - 110) + 110, 10);
+    callback(JSON.stringify(tick));
+};
+
+window.update = function(callback) {
+    var tick = {};
+    tick.plot0 = parseInt(Math.random() * (96 - 104) + 104, 10);
+    callback(JSON.stringify(tick));
+};
+
+window.calories = function(callback) {
+    var tick = {};
+    tick.plot0 = parseInt(Math.random() * (536 - 596) + 586);
+    tick.plot1 = parseInt(Math.random() * (304 - 244) + 244);
+    callback(JSON.stringify(tick));
+};
+
+window.distance = function(callback) {
+    var tick = {};
+    tick.plot0 = parseInt(Math.random() * (6 - 9) + 9);
+    tick.plot1 = 10 - tick.plot0;
     callback(JSON.stringify(tick));
 };
