@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91f3c646-64b4-4480-a005-b8844968c87e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/main.js" afterPath="$PROJECT_DIR$/blog/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/zingchart.html" afterPath="$PROJECT_DIR$/blog/zingchart.html" />
     </list>
@@ -27,8 +28,8 @@
       <file leaf-file-name="zingchart.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/zingchart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="79" column="102" selection-start-line="79" selection-start-column="102" selection-end-line="79" selection-end-column="102" />
+            <state relative-caret-position="428">
+              <caret line="82" column="158" selection-start-line="82" selection-start-column="158" selection-end-line="82" selection-end-column="158" />
               <folding />
             </state>
           </provider>
@@ -54,11 +55,12 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="386" column="25" selection-start-line="386" selection-start-column="17" selection-end-line="386" selection-end-column="25" />
+            <state relative-caret-position="250">
+              <caret line="204" column="10" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="10" />
               <folding>
-                <element signature="e#6395#8618#0" expanded="false" />
-                <marker date="1473968114964" expanded="false" signature="8628:11024" ph="{&quot;type&quot;: &quot;gauge&quot;...}" />
+                <element signature="e#178#540#0" expanded="false" />
+                <element signature="e#6469#8729#0" expanded="false" />
+                <element signature="e#8739#11171#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -279,12 +281,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473893608249</updated>
-      <workItem from="1473893609410" duration="6151000" />
+      <workItem from="1473893609410" duration="10303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6151000" />
+    <option name="totallyTimeSpent" value="10303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -320,7 +322,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -340,11 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/zingchart_logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -361,21 +360,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/zingchart_logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="386" column="25" selection-start-line="386" selection-start-column="17" selection-end-line="386" selection-end-column="25" />
+        <state relative-caret-position="250">
+          <caret line="204" column="10" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="10" />
           <folding>
-            <element signature="e#6395#8618#0" expanded="false" />
-            <marker date="1473968114964" expanded="false" signature="8628:11024" ph="{&quot;type&quot;: &quot;gauge&quot;...}" />
+            <element signature="e#178#540#0" expanded="false" />
+            <element signature="e#6469#8729#0" expanded="false" />
+            <element signature="e#8739#11171#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/zingchart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="79" column="102" selection-start-line="79" selection-start-column="102" selection-end-line="79" selection-end-column="102" />
+        <state relative-caret-position="428">
+          <caret line="82" column="158" selection-start-line="82" selection-start-column="158" selection-end-line="82" selection-end-column="158" />
           <folding />
         </state>
       </provider>

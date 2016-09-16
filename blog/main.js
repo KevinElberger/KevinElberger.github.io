@@ -44,6 +44,7 @@ var chartData = {
                 "type": "feed",
                 "transport": "js",
                 "url": "calories()",
+                "reset-timeout": 20,
                 "interval": 1000
             },
             "plot": {
@@ -135,6 +136,7 @@ var chartData = {
                 "type": "feed",
                 "transport": "js",
                 "url": "distance()",
+                "reset-timeout": 10,
                 "interval": 1000
             },
             "plot": {
@@ -272,6 +274,7 @@ var chartData = {
                 "type": "feed",
                 "transport": "js",
                 "url": "feed()",
+                "reset-timeout": 20,
                 "interval": 1000
             }
         },
@@ -294,6 +297,7 @@ var chartData = {
                 "type": "feed",
                 "transport": "js",
                 "url": "update()",
+                "reset-timeout": 2,
                 "interval": 1000
             },
             "plot": {
@@ -356,35 +360,57 @@ var chartData = {
     ]
 };
 
-zingchart.render({
-    id:'chartDiv',
-    data:chartData,
-    height:400,
-    width:"100%"
-});
-
 window.feed = function(callback) {
     var tick = {};
     tick.plot0 = parseInt(Math.random() * (85 - 110) + 110, 10);
     callback(JSON.stringify(tick));
 };
 
-window.update = function(callback) {
+window.update = (function() {
     var tick = {};
-    tick.plot0 = parseInt(Math.random() * (96 - 104) + 104, 10);
-    callback(JSON.stringify(tick));
-};
+    tick.plot0 = 98;
+    return function(callback) {
+        if (tick.plot0 > 104) {
+            tick.plot0 = 98;
+        }
+        tick.plot0 += 1;
+        callback(JSON.stringify(tick));
+    };
+}());
 
-window.calories = function(callback) {
-    var tick = {};
-    tick.plot0 = parseInt(Math.random() * (536 - 596) + 586);
-    tick.plot1 = parseInt(Math.random() * (304 - 244) + 244);
-    callback(JSON.stringify(tick));
-};
+window.calories = (function() {
+ var tick = {};
+ tick.plot0 = 536;
+ tick.plot1 = 304;
+ return function(callback) {
+     if (tick.plot0 > 630) {
+         tick.plot0 = 536;
+         tick.plot1 = 304;
+     }
+     tick.plot0 += 5;
+     tick.plot1 -= 5;
+     callback(JSON.stringify(tick));
+ };
+}());
 
-window.distance = function(callback) {
+window.distance = (function(callback) {
     var tick = {};
-    tick.plot0 = parseInt(Math.random() * (6 - 9) + 9);
-    tick.plot1 = 10 - tick.plot0;
-    callback(JSON.stringify(tick));
-};
+    tick.plot0 = 6.1;
+    tick.plot1 = 4.8;
+    return function(callback) {
+        if (tick.plot0 > 8) {
+            tick.plot0 = 6.1;
+            tick.plot1 = 4.8;
+        }
+        tick.plot0 = Math.round((tick.plot0 + .1) * 100) / 100;
+        tick.plot1 = Math.round((tick.plot1 - .1) * 100) / 100;
+        callback(JSON.stringify(tick));
+    };
+}());
+
+zingchart.render({
+    id:'chartDiv',
+    data:chartData,
+    height:400,
+    width:"100%"
+});
